@@ -4,8 +4,13 @@ This is my personal web page were i show all my experience and my skills as a so
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+First install the dependencies:
 
-First, run the development server:
+```bash
+npm install
+```
+
+then, run the development server:
 
 ```bash
 npm run dev
