@@ -1,4 +1,6 @@
+
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -15,17 +17,20 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Luis Miguel Gonzalez",
-  description: "Personal website, projects, and writing by Luis Miguel Gonzalez.",
+  description:
+    "Personal website, projects, and writing by Luis Miguel Gonzalez.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
