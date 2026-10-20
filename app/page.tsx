@@ -1,18 +1,10 @@
-
 import Navbar from "@/components/navbar";
 
-const technologies = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Vue.js",
-  "Python",
-  "FastAPI",
-];
+const technologies = ["React", "Next.js", "TypeScript", "Vue.js", "Python", "FastAPI"];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-zinc-50 font-sans text-zinc-950 transition-colors dark:bg-black dark:text-zinc-50">
+    <div className="flex min-h-screen flex-col bg-zinc-50 font-sans text-zinc-950 transition-colors dark:bg-background/80 dark:text-zinc-50">
       <Navbar />
 
       <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-6 py-20 sm:px-10 sm:py-28">
@@ -30,9 +22,8 @@ export default function Home() {
             </h1>
 
             <p className="max-w-lg text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-              I&apos;m a software engineer focused on frontend development,
-              building useful products, and exploring how AI can improve
-              the way we create software.
+              I&apos;m a software engineer focused on frontend development, building useful
+              products, and exploring how AI can improve the way we create software.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
@@ -60,9 +51,7 @@ export default function Home() {
 
               <div>
                 <p className="font-medium">My tech stack</p>
-                <p className="text-sm text-zinc-500">
-                  Tools I use and explore
-                </p>
+                <p className="text-sm text-zinc-500">Tools I use and explore</p>
               </div>
             </div>
 
@@ -79,25 +68,18 @@ export default function Home() {
 
             <div className="mt-8 border-t border-zinc-200 pt-5 dark:border-zinc-800">
               <p className="text-sm text-zinc-500">Currently learning</p>
-              <p className="mt-1 font-medium">
-                AI Engineering &amp; System Design
-              </p>
+              <p className="mt-1 font-medium">AI Engineering &amp; System Design</p>
             </div>
           </div>
         </section>
 
-        <section
-          id="about"
-          className="mt-20 border-t border-zinc-200 py-10 dark:border-zinc-800"
-        >
-          <h2 className="text-2xl font-semibold tracking-tight">
-            Beyond code
-          </h2>
+        <section id="about" className="mt-20 border-t border-zinc-200 py-10 dark:border-zinc-800">
+          <h2 className="text-2xl font-semibold tracking-tight">Beyond code</h2>
 
           <p className="mt-4 max-w-2xl leading-7 text-zinc-600 dark:text-zinc-400">
-            Outside software development, I enjoy playing tennis, learning
-            new things, and exploring different ideas. This is my space to
-            share what I build, what I learn, and what interests me.
+            Outside software development, I enjoy playing tennis, learning new things, and exploring
+            different ideas. This is my space to share what I build, what I learn, and what
+            interests me.
           </p>
         </section>
       </main>

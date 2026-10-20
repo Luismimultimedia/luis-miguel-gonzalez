@@ -1,9 +1,11 @@
 # luis-miguel-gonzalez
+
 This is my personal web page were i show all my experience and my skills as a software developer. On this profile page who is interested on my services can contact me.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+
 First install the dependencies:
 
 ```bash

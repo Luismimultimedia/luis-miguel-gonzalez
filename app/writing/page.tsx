@@ -1,9 +1,11 @@
-const writing = () => {
-    return (
-        <main>
-            <h1>Writing page</h1>
-        </main>
-    );
-}
+import UnderConstruction from "@/components/under-construction";
 
-export default writing
+const writing = () => {
+  return (
+    <main>
+      <UnderConstruction />
+    </main>
+  );
+};
+
+export default writing;

@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { ThemeProvider } from "@/providers/theme-provider";
@@ -17,13 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Luis Miguel Gonzalez",
-  description:
-    "Personal website, projects, and writing by Luis Miguel Gonzalez.",
+  description: "Personal website, projects, and writing by Luis Miguel Gonzalez.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html
       lang="en"
