@@ -1,9 +1,11 @@
-const contact = () => {
-    return(
-        <main>
-            <h1>Contact page</h1>
-        </main>
-    );
-}
+import UnderConstruction from "@/components/under-construction";
 
-export default contact
+const contact = () => {
+  return (
+    <main>
+      <UnderConstruction />
+    </main>
+  );
+};
+
+export default contact;

@@ -1,8 +1,11 @@
-const about = () => {
-    return(
-    <main>
-        <h1>About page</h1>
-    </main>)
-}
+import UnderConstruction from "@/components/under-construction";
 
-export default about
+const about = () => {
+  return (
+    <main>
+      <UnderConstruction />
+    </main>
+  );
+};
+
+export default about;
