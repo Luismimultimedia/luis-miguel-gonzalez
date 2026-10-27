@@ -4,8 +4,8 @@ import MenuToggle from "../menu-toggle";
 
 const menuItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Writing", href: "/writing" },
+  { label: "About", href: "/#about" },
+  // { label: "Writing", href: "/writing" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -20,7 +20,7 @@ const Navbar = () => {
         <nav className="space-x-7 hidden md:inline">
           {menuItems.map((item) => (
             <Link
-              key={`menu-itme ${item.label}`}
+              key={`menu-item ${item.label}`}
               href={item.href}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >

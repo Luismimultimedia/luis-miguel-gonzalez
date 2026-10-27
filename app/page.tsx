@@ -2,6 +2,8 @@ import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import About from "@/components/about";
 import SectionContainer from "@/components/section-container";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -10,8 +12,14 @@ export default function Home() {
 
       <main className="flex flex-1 flex-col w-full divide-1">
         <Hero />
-        <SectionContainer>
+        <SectionContainer id="about">
           <About />
+        </SectionContainer>
+        <SectionContainer id="contact">
+          <Contact />
+        </SectionContainer>
+        <SectionContainer>
+          <Footer />
         </SectionContainer>
       </main>
     </div>
