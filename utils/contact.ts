@@ -57,6 +57,11 @@ export async function sendContactMessage(
   });
 
   if (error) {
+    console.error({
+      ok: false,
+      error: "Something went wrong. Please try again.",
+      details: error.message,
+    })
     return {
       ok: false,
       error: "Something went wrong. Please try again.",
