@@ -5,6 +5,7 @@ import { Resend } from "resend";
 export type ContactFormState = {
   ok: boolean;
   error: string | null;
+  details?: string | null;
 };
 
 const CONTACT_EMAIL = "luismimultimedia@gmail.com";
@@ -56,8 +57,12 @@ export async function sendContactMessage(
   });
 
   if (error) {
-    return { ok: false, error: "Something went wrong. Please try again." };
+    return {
+      ok: false,
+      error: "Something went wrong. Please try again.",
+      details: error.message,
+    };
   }
 
-  return { ok: true, error: null };
+  return { ok: true, error: null, details: null };
 }
